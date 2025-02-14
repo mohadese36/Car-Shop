@@ -1,4 +1,3 @@
-
 # Classic Cars Website
 
 This is a classic car website I created as my first web development project. It was a challenging experience as I was just starting out with web development, but I learned a lot throughout the process.
@@ -22,3 +21,4 @@ This is a classic car website I created as my first web development project. It 
 1. Clone the repository:
    ```bash
    git clone https://github.com/mohadese36/Classic-Cars-Website.git
+
