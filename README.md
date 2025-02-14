@@ -13,6 +13,9 @@ This is a classic car website I created as my first web development project. It 
 - Interactive design elements powered by JavaScript.
 - Clean and simple design, focusing on classic cars.
 
+### Demo:
+You can view the live demo of the project [here](https://prismatic-muffin-29e2b0.netlify.app/).
+
 ### Future Improvements:
 - Plan to convert the website into a multi-page site with more features.
 - Improve the functionality and design based on user feedback.
@@ -21,4 +24,3 @@ This is a classic car website I created as my first web development project. It 
 1. Clone the repository:
    ```bash
    git clone https://github.com/mohadese36/Classic-Cars-Website.git
-
