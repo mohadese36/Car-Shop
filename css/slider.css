@@ -1,0 +1,44 @@
+
+
+/* slider */
+.slider-container {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+.image-wrapper {
+    width: 16.666%;
+    text-align: center;
+    flex-shrink: 0;
+}
+.wrapper-slider {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px; 
+}
+.logo-img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+}
+.slider-controls-container {
+    gap: 10px;
+}
+.slider-inner {
+    transition: transform 0.7s ease-in-out;
+}
+
+.slider-arrow {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.vertical-line {
+    width: 3px;
+    height: 90px;
+    background-color: #333;
+    margin-right: 15px;
+    
+}

@@ -1,0 +1,218 @@
+
+
+.mail-image {
+  width: 100%;
+  max-width: 20rem;
+  height: auto;
+}
+/* car search left */
+.image-container img {
+  filter: drop-shadow(10px 20px 15px rgba(0, 0, 0, 0.7));
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.input-box h3 {
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  text-shadow: 0 3px 4px rgba(0, 0, 0, 0.5) !important;
+}
+#searchbox {
+  background: #eaf8fc;
+  background-image: -moz-linear-gradient(#fff, #d4e8ec);
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #d4e8ec),
+    color-stop(1, #fff)
+  );
+  
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  border: 1px solid  #c4d9df #a4c3ca #83afb7;
+  padding: 4px 10px;
+  overflow: hidden;
+}
+#submit:hover {
+  background: #95d788;
+  background-image: -moz-linear-gradient(#6cbb6b, #95d788);
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #95d788),
+    color-stop(1, #6cbb6b)
+  );
+} 
+  #submit:active {
+    background: #95d788;
+    outline: none;
+  
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+  }
+  
+  #submit::-moz-focus-inner {
+    border: none;
+  }
+  
+  /* ----------------------- */
+  
+  #search::-webkit-input-placeholder  {
+    color: #9c9c9c !important;
+    font-style: italic !important;
+  }
+  
+  #search:-moz-placeholder,
+  #search.placeholder {
+    color: #9c9c9c;
+    font-style: italic;
+  }
+
+  #search:focus {
+    border-color: #8badb4;
+    background: #fff;
+    outline: none;
+  }
+  .byline p {
+    color: #7eba7c;
+    font-family: "Parisienne", serif !important;
+    font: bold;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+
+/* car search right */
+
+  .bg-image {
+    background-image: url('../image/banner-6.png');
+    background-size: cover;
+    background-position: center;
+  
+  }
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+  }
+
+  .flipped-image {
+    transform: scale(1) translateY(-14%);
+}
+
+
+  #search {
+    padding: 5px 9px;
+    width: 83%;
+    height: auto;
+    border: 1px solid #a4c3ca;
+    font-size: clamp(0.65rem, 2vw, 1rem);
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background: #f1f1f1;
+    -moz-border-radius: 50px 3px 3px 50px;
+    border-radius: 50px 3px 3px 50px;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+#submit {
+    background: #6cbb6b;
+    background-image: -moz-linear-gradient(#95d788, #6cbb6b);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #6cbb6b), color-stop(1, #95d788));
+    -moz-border-radius: 3px 50px 50px 3px;
+    border-radius: 3px 50px 50px 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7eba7c #578e57 #447d43;
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    width: 30%;
+    height: auto;
+    padding: 0 1%;
+    margin: 0 0 0 1%;
+    cursor: pointer;
+    font-size: clamp(0.65rem, 1.2vw, 0.85rem);
+    font-weight: bold;
+    font-family: "Montserrat",sans-serif !important;
+    font-weight: 800;
+    color: #23441e;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.byline p {
+    color: #343a40;
+    font-family: "Montserrat",sans-serif !important;
+    font-size: clamp(0.5rem, 2vw, 0.6rem);
+    font-style: oblique;
+    font-weight: 900;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.3), 
+    4px 4px 8px rgba(0, 0, 0, 0.5),  
+    6px 6px 12px rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+}
+
+.byline p a {
+    color: #343a40;
+    text-decoration: none;
+    font-size: clamp(0.75rem, 2vw, 0.75rem); 
+}
+h3.Special {
+    color: #343a40;
+    font-family: "Racing Sans One", serif !important;
+    font-weight: 700;
+    font-style: oblique;
+    font-size: clamp(0.85rem, 1vw, 2rem) !important; 
+    text-transform: uppercase;
+    text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.3), 
+    4px 4px 8px rgba(0, 0, 0, 0.5),  
+    6px 6px 12px rgba(0, 0, 0, 0.7) !important;
+}
+
+.input-box p {
+  font-family: "Parisienne", serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* استایل پیش‌فرض */
+.galleri-items {
+  gap: 2rem !important; /* فاصله بین آیتم‌ها */
+}
+

@@ -1,0 +1,187 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+@import 'goutes.css';
+@import 'slider.css';
+@import 'footer.css';
+@import 'services.css';
+@import './header.css';
+@import './skills.css';
+@import './gallery.css';
+@import './featured.css';
+@import './question.css';
+@import './inventory.css';
+@import './iconic.css';
+
+* {
+  padding: 0 ;
+  margin: 0 ;
+  box-sizing: border-box;
+  /* border: 1px solid; */
+ 
+}
+.racing-sans-one-regular {
+  font-family: "Racing Sans One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.concert-one-regular {
+  font-family: "Concert One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.concert-one-regular {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  /* رنگ‌های هدر */
+  --color-header-bg: #fdfaf5;  
+  --color-header-text: #38434f;
+  --color-primary-blue: #3a82c8;  
+  --color-secondary-red: #b24020;
+
+  --color-background-light-blue: #dce6f1;
+  --color-link: #004182;
+  --color-secondary-brown: #915907;   
+  --color-secondary-green: #10523c; 
+
+  --color-page-bg: #fdfaf5;    
+  --color-footer-bg: #38434f;   
+  --color-footer-text: #fdfaf5;  
+  --color-footer-link-hover: #0a66c2; 
+
+  --color-background-very-light: #ffffff;
+
+
+
+
+
+
+
+
+
+
+
+
+  /* رنگ‌های اصلی */
+           /* آبی با حس زندگی بیشتر */
+  --color-primary-olive: #257226;          /* سبز زیتونی کمی روشن‌تر */
+  --color-primary-orange: #e59342;         /* نارنجی کمی گرم‌تر */
+  --color-primary-peach: #f5987e;          /* هلو */
+  --color-primary-dark-blue: #003a70;      /* آبی تیره‌تر برای کنتراست بیشتر */
+  --color-primary-grey-blue: #56687a;      /* خاکی آبی */
+  
+  /* رنگ‌های اضافی */
+       /* سبز */
+
+
+  --color-secondary-dark-grey: #38434f;    /* خاکی تیره */
+  
+  /* رنگ‌های پس‌زمینه */
+    /* پس‌زمینه آبی روشن */
+  --color-background-light-green: #d7ebce; /* پس‌زمینه سبز روشن */
+  --color-background-light-peach: #fce2ba; /* پس‌زمینه هلو روشن */
+  --color-background-light-pink: #fadfd8;  /* پس‌زمینه صورتی روشن */
+  --color-background-light-grey: #fcfbf3;  /* پس‌زمینه بسیار روشن (جایگزین خاکی روشن) */
+    /* پس‌زمینه سفید برای حس لوکس */
+  
+
+  --color-link-hover: #0052a3;             /* هاور لینک */
+  
+  /* رنگ‌های دکمه‌ها */
+  --color-btn-bg: #4caf50;                 /* پس‌زمینه دکمه سبز */
+  --color-btn-text: #ffffff;               /* رنگ متن دکمه سفید */
+  --color-btn-hover-bg: #45a049;           /* پس‌زمینه دکمه در هاور سبز تیره‌تر */
+  --color-btn-hover-text: #ffffff;         /* متن دکمه در هاور سفید */
+  --color-btn-disabled-bg: #9e9e9e;        /* پس‌زمینه دکمه غیرفعال خاکی */
+  --color-btn-disabled-text: #fdfaf5;      /* متن دکمه غیرفعال سفید */
+  
+  /* رنگ‌های ورودی‌ها */
+  --color-input-bg: #ffffff;               /* پس‌زمینه ورودی‌ها */
+  --color-input-border: #83941f;           /* مرز ورودی‌ها */
+  --color-input-text: #56687a;             /* متن ورودی‌ها */
+  --color-input-placeholder: #fce2ba;      /* رنگ پیش‌فرض ورودی‌ها */
+  --color-input-focus-border: #0a66c2;     /* مرز ورودی در حالت فوکوس */
+  
+  /* رنگ‌های کارت‌ها */
+  --color-card-bg: #56687a;                /* پس‌زمینه کارت‌ها */
+  --color-card-text: #0a66c2;              /* متن داخل کارت‌ها */
+  --color-card-header-bg: #e7a33e;         /* پس‌زمینه هدر کارت‌ها */
+  --color-card-header-text: #ffffff;       /* متن هدر کارت‌ها */
+  --color-card-footer-bg: #83941f;         /* پس‌زمینه فوتر کارت‌ها */
+  --color-card-footer-text: #ffffff;       /* متن فوتر کارت‌ها */
+  --color-card-border: #d6d2cc;            /* مرز کارت‌ها */
+  
+  /* رنگ‌های فوتر */
+             /* پس‌زمینه فوتر */
+            /* رنگ متن فوتر */
+  --color-footer-link: #83941f;            /* رنگ لینک‌های فوتر */
+  --color-header-link-hover: #38434f;      /* هاور لینک‌های هدر */
+  
+  /* رنگ‌های منو */
+  --color-nav-bg: #38434f;                 /* پس‌زمینه منو */
+  --color-nav-text: #fdfaf5;               /* رنگ متن منو */
+  --color-nav-text: #fdfaf5;         /* هاور لینک‌های منو */
+  
+ --color-black: #000;
+  --color-submenu-bg: #6d8e3e;  /* سبز زیتونی ملایم‌تر */
+  --color-submenu-link: #fdfaf5;           /* رنگ متن‌های زیرمنو (رنگ روشن) */
+  --color-submenu-link-hover: #ffcc00;  /* رنگ هاور لینک‌ها (زرد روشن) */
+
+
+  
+  /* رنگ‌های صفحه */
+              /* پس‌زمینه صفحه */
+  --color-page-text: #37424e;              /* رنگ متن صفحه */
+}
+.bg-beige {
+  background: #ece5d1;
+}
+.text-beige {
+  background: #ece5d1;
+}
+
+body {
+  font-family: var(--roboto) !important;
+  color: var(--mainBlack);
+  background: var(--color-page-bg);
+  margin: 0 !important;
+  padding: 0 !important;
+}
+a {
+  text-decoration: none;
+}
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+  
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-background-very-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+#preloader video {
+  max-width: 100%;
+  max-height: 100%;
+}
+#content {
+  display: none;
+}

@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Car Shop</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    
+</head>
+<body class="container-fluid bg-beige">
+
+    <!-- loading screen-->
+    <div id="preloader">
+        <img src="https://themes.potenzaglobalsolutions.com/html/cardealer/images/loader3.gif" alt="">
+    </div>
+    <div class="content">
+        <nav class="navbar pt-2 d-none d-md-block bg-light top-navbar">
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center my-2 mx-auto">
+                <div class="d-flex flex-column flex-md-row align-items-center text-center text-md-start nav-infos">
+                    <span class="me-md-3 mb-2 mb-md-0 text-muted">
+                        <i class="fa-solid fa-clock"></i> Mon - Tues : 6.00 am - 10.00 pm
+                    </span>
+                    <span class="text-muted">
+                        <i class="fa-solid fa-location-dot"></i> 121 King St, Melbourne, Australia
+                    </span>
+                </div>
+                <div class="nav-icons d-flex align-items-center justify-content-center d-none d-md-block">
+                    <span class="content__item me-2">
+                        <a href="./register.html" class="link link--thebe text-dark">Sign-up</a>
+                    </span>
+                    <label class="switch">
+                        <input class="switch__input" type="checkbox" role="switch"  id="dark-mode-switch">
+                        <svg class="switch__icon switch__icon--light" viewBox="0 0 12 12" width="12px" height="12px" aria-hidden="true">
+                            <g fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round">
+                                <circle cx="6" cy="6" r="2" />
+                                <g stroke-dasharray="1.5 1.5">
+                                    <polyline points="6 10,6 11.5" transform="rotate(0,6,6)" />
+                                    <polyline points="6 10,6 11.5" transform="rotate(45,6,6)" />
+                                    <polyline points="6 10,6 11.5" transform="rotate(90,6,6)" />
+                                    <polyline points="6 10,6 11.5" transform="rotate(135,6,6)" />
+                                    <polyline points="6 10,6 11.5" transform="rotate(180,6,6)" />
+                                    <polyline points="6 10,6 11.5" transform="rotate(225,6,6)" />
+                                    <polyline points="6 10,6 11.5" transform="rotate(270,6,6)" />
+                                    <polyline points="6 10,6 11.5" transform="rotate(315,6,6)" />
+                                </g>
+                            </g>
+                        </svg>
+                        <svg class="switch__icon switch__icon--dark" viewBox="0 0 12 12" width="12px" height="12px" aria-hidden="true">
+                            <g fill="none" stroke="#fff" stroke-width="1" stroke-linejoin="round" transform="rotate(-45,6,6)">
+                                <path d="m9,10c-2.209,0-4-1.791-4-4s1.791-4,4-4c.304,0,.598.041.883.105-.995-.992-2.367-1.605-3.883-1.605C2.962.5.5,2.962.5,6s2.462,5.5,5.5,5.5c1.516,0,2.888-.613,3.883-1.605-.285.064-.578.105-.883.105Z"/>
+                            </g>	
+                        </svg>
+                        <span class="switch__sr">Dark Mode</span>
+                    </label>
+                </div>
+            </div>
+            <hr class="navbar-divider">
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+            <div class="container">
+                <div class="nav-icons d-flex align-items-center gap-2 d-block d-md-none">
+                    <span class="content__item">
+                        <a href="./register.html" class="link link--thebe text-white">Sign-up</a>
+                    </span>
+                </div>            
+                <a class="navbar-brand d-flex justify-content-start" href="#">
+                    <img src="image/My-Classics-Logo.png" alt="Logo" class="img-fluid"/>
+                </a>              
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <!-- Offcanvas menu for mobile view -->
+                <div class="offcanvas offcanvas-start bg-dark d-block d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand d-flex justify-content-start" href="#">
+                            <img src="image/My-Classics-Logo.png" alt="Logo" class="img-fluid"/>
+                        </a>                      
+                        <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <form class="d-flex d-lg-none">
+                            <div class="input-group rounded-5">
+                                <span class="input-group-text" id="search-addon"><img src="image/carsearch.png" alt="Search Icon"></span>
+                                <input type="text" class="form-control" placeholder="Search here..." aria-label="Search" aria-describedby="search-addon" onfocus="this.style.boxShadow='0px 0px 10px #0d7ee0';" onblur="this.style.boxShadow='none';" />
+                            </div>
+                        </form>
+                        <ul class="navbar-nav py-3 mx-auto d-flex flex-column">
+                            <li class="nav-item me-3">
+                                <a href="#" class="text-light nav-link fw-bold">HOME</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a href="#" class="nav-link fw-bold" data-bs-toggle="collapse" data-bs-target="#skillsSubMenu" aria-expanded="false" aria-controls="skillsSubMenu">
+                                    SKILLS
+                                </a>
+                                <ul class="collapse sub-menu p-1 border-1 w-auto" id="skillsSubMenu">
+                                    <li><a class="text-white-50 fw-light" href="#">Restoration Techniques</a></li>
+                                    <li><a class="text-white-50 fw-light" href="#">Engine Maintenance</a></li>
+                                    <li><a class="text-white-50 fw-light" href="#">Bodywork Craftsmanship</a></li>
+                                    <li><a class="text-white-50 fw-light" href="#">Painting & Polishing</a></li>
+                                    <li><a class="text-white-50 fw-light" href="#">Interior Upholstery Skills</a></li>
+                                    <li><a class="text-white-50 fw-light" href="#">Electrical System Upgrades</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a href="#" class="nav-link fw-bold" data-bs-toggle="collapse" data-bs-target="#inventorySubMenu" aria-expanded="false" aria-controls="inventorySubMenu">
+                                    INVENTORY
+                                </a>
+                                <ul class="collapse sub-menu" id="inventorySubMenu">
+                                    <li><a class="text-white-50 fw-light" href="#">Available Models</a></li>
+                                    <li><a class="text-white-50 fw-light" href="#">Parts & Accessories</a></li>
+                                    <li><a class="text-white-50 fw-light" href="#">For Sale</a></li>
+                                    <li><a class="text-white-50 fw-light" href="#">Rare Collectibles</a></li>
+                                    <li><a class="text-white-50 fw-light" href="#">Upcoming Auctions</a></li>
+                                    <li><a class="text-white-50 fw-light" href="#">Restored Vehicles</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a href="#" class="nav-link fw-bold" data-bs-toggle="collapse" data-bs-target="#featuresSubMenu" aria-expanded="false" aria-controls="featuresSubMenu">
+                                    FEATURES
+                                </a>
+                                <ul class="collapse sub-menu" id="featuresSubMenu">
+                                    <li><a class="text-white-50 fw-light" href="#">Classic Car Galleries</a></li>
+                                    <li><a class="text-white-50 fw-light" href="#">Event Highlights</a></li>
+                                    <li><a class="text-white-50 fw-light" href="#">Owner Stories</a></li>
+                                    <li><a class="text-white-50 fw-light" href="#">Restoration Before & After</a></li>
+                                    <li><a class="text-white-50 fw-light" href="#">Top 10 Classic Cars</a></li>
+                                    <li><a class="text-white-50 fw-light" href="#">Expert Reviews</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <!-- Navbar links for desktop (shown on large screens) -->
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav mx-auto d-flex d-lg-flex flex-column flex-lg-row">
+                        <li class="custom-nav-item margin-right-3">
+                            <a href="#" class="nav-link">HOME</a>
+                        </li>
+                        <li class="custom-nav-item margin-right-3">
+                            <a href="#" class="d-flex justify-content-between align-items-center nav-link">
+                                SKILLS
+                                <i class="fa-solid fa-caret-down arrow"></i>
+                            </a>
+                            <ul class="submenu bg-light">
+                                <li><a class="text-dark-emphasis" href="#">Restoration Techniques</a></li>
+                                <li><a class="text-dark-emphasis" href="#">Engine Maintenance</a></li>
+                                <li><a class="text-dark-emphasis" href="#">Bodywork Craftsmanship</a></li>
+                                <li><a class="text-dark-emphasis" href="#">Painting & Polishing</a></li>
+                                <li><a class="text-dark-emphasis" href="#">Interior Upholstery Skills</a></li>
+                                <li><a class="text-dark-emphasis" href="#">Electrical System Upgrades</a></li>
+                            </ul>
+                        </li>
+                        <li class="custom-nav-item margin-right-3">
+                            <a href="#" class="d-flex justify-content-between align-items-center nav-link">
+                                INVENTORY
+                                <i class="fa-solid fa-caret-down arrow"></i>
+                            </a>
+                            <ul class="submenu bg-light">
+                                <li><a class="text-dark-emphasis" href="#">Available Models</a></li>
+                                <li><a class="text-dark-emphasis" href="#">Parts & Accessories</a></li>
+                                <li><a class="text-dark-emphasis" href="#">For Sale</a></li>
+                                <li><a class="text-dark-emphasis" href="#">Rare Collectibles</a></li>
+                                <li><a class="text-dark-emphasis" href="#">Upcoming Auctions</a></li>
+                                <li><a class="text-dark-emphasis" href="#">Restored Vehicles</a></li>
+                            </ul>
+                        </li>
+                        <li class="custom-nav-item margin-right-3">
+                            <a href="#" class="d-flex justify-content-between background-dark subtle align-items-center nav-link">
+                                FEATURES
+                                <i class="fa-solid fa-caret-down arrow"></i>
+                            </a>
+                            <ul class="submenu bg-light">
+                                <li><a class="text-dark-emphasis" href="#">Classic Car Galleries</a></li>
+                                <li><a class="text-dark-emphasis" href="#">Event Highlights</a></li>
+                                <li><a class="text-dark-emphasis" href="#">Owner Stories</a></li>
+                                <li><a class="text-dark-emphasis" href="#">Restoration Before & After</a></li>
+                                <li><a class="text-dark-emphasis" href="#">Top 10 Classic Cars</a></li>
+                                <li><a class="text-dark-emphasis" href="#">Expert Reviews</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-none d-lg-flex">
+                        <div class="input-group rounded">
+                            <span class="input-group-text" id="search-addon"><img src="image/carsearch.png" alt="Search Icon"></span>
+                            <input type="text" class="form-control" placeholder="Search here..." aria-label="Search" aria-describedby="search-addon" onfocus="this.style.boxShadow='0px 0px 10px #0d7ee0';" onblur="this.style.boxShadow='none';" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <header class="header-slider">
+            <div class="container header-container">
+                <div class="row w-100 align-items-center justify-content-start">
+                    <div class="col-md-8 col-lg-6 col-xl-5">
+                        <div class="glass-box p-4">
+                            <div class="header-content">
+                                <div class="d-flex justify-content-start align-items-center mb-3">
+                                    <div class="rating-holder d-flex align-items-center">
+                                        <div class="rating-stars">
+                                            <div data-rating-value="4.75" class="c-rating c-rating--regular align-text-center">
+                                                <div class="stars d-flex justify-content-start">
+                                                    <i class="bi bi-star-fill text-warning me-1"></i>
+                                                    <i class="bi bi-star-fill text-warning me-1"></i>
+                                                    <i class="bi bi-star-fill text-warning me-1"></i>
+                                                    <i class="bi bi-star-fill text-warning me-1"></i>
+                                                    <i class="bi bi-star-half text-warning"></i>
+                                                    <span class="rating-number ms-2 text-info">4.68</span>
+                                                </div>
+                                                <div class="rating-count">
+                                                    <p class="rating-count-item text-muted m-0 text-light">Based on 894 ratings</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-5">
+                                        <img src="image/speed.png" alt="Logo" class="power-img img-fluid rounded-circle me-2">
+                                        <div class="power">
+                                            <span class="d-block fw-bold text-danger">Power Elite</span>
+                                            <span class="small text-muted">Author Product</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-start">
+                                    <h1 class="header-title mb-4 text-white">
+                                        Welcome to your 
+                                        <br>
+                                        personal 
+                                        <span class="text-danger">classic car</span> 
+                                        <br>
+                                        buying experience
+                                    </h1>
+                                    <span class="main-header-caption text-info">
+                                        With millions of people approved across the country, our flexible financing makes it easy to find terms that fit your budget regardless of your credit background.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="headerCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item h-100 w-100 active">
+                        <img src="image/header-sliders.jpg" class="img-fluid w-100 h-100 d-block object-fit-cover" alt="Slider Image 1">
+                    </div>
+                    <div class="carousel-item h-100 w-100">
+                        <img src="image/header-salids.jpg" class="img-fluid w-100 h-100 d-block object-fit-cover" alt="Slider Image 2">
+                    </div>
+                    <div class="carousel-item h-100 w-100">
+                        <img src="image/header-sliders3.jpg" class="img-fluid w-100 h-25 d-block object-fit-cover" alt="Slider Image 3">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="skills py-5" id="skills">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col d-flex flex-wrap justify-content-center gap-3">
+                        <div class="first-title-container d-flex align-items-center justify-content-center">
+                            <div class="first-text-box">
+                                <h1 class="text-warning-emphasis">CAR DEALER</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3 text-center my-3">
+                        <a href="#" class="skills-icon p-2 rounded-circle bg-primary text-white">
+                            <i class="fas fa-car fa-fw"></i>
+                        </a>
+                        <h6 class="font-weight-bold my-3">ALL BRANDS</h6>
+                        <div class="skills-underline bg-primary"></div>
+                        <p class="w-50 mx-auto text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, magni</p>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 text-center my-3">
+                        <a href="#" class="skills-icon p-2 rounded-circle bg-danger text-white">
+                            <i class="fas fa-comments fa-fw"></i>
+                        </a>
+                        <h6 class="font-weight-bold my-3">FREE SUPPORT</h6>
+                        <div class="skills-underline bg-danger"></div>
+                        <p class="w-50 mx-auto text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, magni</p>
+                    </div>               
+                    <div class="col-sm-6 col-lg-3 text-center my-3">
+                        <a href="#" class="skills-icon p-2 rounded-circle bg-success text-white">
+                            <i class="fas fa-people-carry fa-fw"></i>
+                        </a>
+                        <h6 class="font-weight-bold my-3">CARING</h6>
+                        <div class="skills-underline bg-success"></div>
+                        <p class="w-50 mx-auto text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, magni</p>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 text-center my-3">
+                        <a href="#" class="skills-icon p-2 rounded-circle bg-warning text-white">
+                            <i class="fas fa-wallet fa-fw"></i>
+                        </a>
+                        <h6 class="font-weight-bold my-3">AFFORDABLE</h6>
+                        <div class="skills-underline bg-warning"></div>
+                        <p class="w-50 mx-auto text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, magni</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="inventory py-5" id="inventory">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col d-flex flex-wrap justify-content-center">
+                        <h1 class="section-title-special mx-1 ml12">OUR INVENTORY</h1>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col d-flex flex-wrap mb-2 justify-content-end countrys ">
+                        <button class="btn btn-outline-primary mx-1">ALL</button>
+                        <button class="btn btn-outline-success mx-1">AMERICAN</button>
+                        <button class="btn btn-outline-danger mx-1">GERMAN</button>
+                    </div>
+                </div>
+                <div class="row g-3">
+    
+                    <div class="col-10 mx-auto col-md-6 col-lg-4">
+                        <div class="card car-card shadow-lg" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                            <div class="card-img-wrapper">
+                                <img src="image/inventori-Jaguar.jpg" alt="Jaguar" class="img-fluid card-img-top car-img">
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="">Year:</strong> 
+                                                <span class="text-success">2023</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Color:</strong> 
+                                                <span class="text-danger">Red</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Fuel Type:</strong> 
+                                                <span class="text-warning">Petrol</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Top Speed:</strong> 
+                                                <span class="text-info">250 km/h</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Engine:</strong> 
+                                                <span class="text-success">3.0L V6</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Mileage:</strong> 
+                                                <span class="text-info">15,000 km</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Transmission:</strong> 
+                                                <span class="text-warning">Automatic</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Horsepower:</strong> 
+                                                <span class="text-danger">400 HP</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-info d-flex justify-content-between">
+                                    <div class="car-text">
+                                        <h6 class="font-weight-bold text-dark">JAGUAR</h6>
+                                        <h6 class="text-dark">F-TYPE</h6>
+                                    </div>
+                                    <button class="align-self-start py-2 px-3 btn priceBtn">
+                                        $10,000
+                                        <span></span><span></span><span></span><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-10 mx-auto col-md-6 col-lg-4">
+                        <div class="card car-card shadow-lg" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                            <div class="card-img-wrapper">
+                                <img src="image/inventory-Pierce.jpg" alt="price" class="img-fluid card-img-top car-img">
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Year:</strong> 
+                                                <span class="text-success">1976</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Color:</strong> 
+                                                <span class="text-danger">Black</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Fuel Type:</strong> 
+                                                <span class="text-warning">Gasoline</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Top Speed:</strong> 
+                                                <span class="text-info">280 km/h</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Engine:</strong> 
+                                                <span class="text-success">3.5L V8</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Mileage:</strong> 
+                                                <span class="text-info">10,500 km</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Transmission:</strong> 
+                                                <span class="text-warning">Automatic</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Horsepower:</strong> 
+                                                <span class="text-danger">450 HP</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-info d-flex justify-content-between">
+                                    <div class="car-text">
+                                        <h6 class="font-weight-bold text-dark">PIERCE</h6>
+                                        <h6 class="text-dark">ARROW</h6>
+                                    </div>
+                                    <button class="align-self-start py-2 px-3 btn priceBtn">
+                                        $12,000
+                                        <span></span><span></span><span></span><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-10 mx-auto col-md-6 col-lg-4">
+                        <div class="card car-card shadow-lg" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                            <div class="card-img-wrapper">
+                                <img src="image/inventory-£18,950.00.jpg" alt="price" class="img-fluid card-img-top car-img">
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Year:</strong> 
+                                                <span class="text-success">1963</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Color:</strong> 
+                                                <span class="text-danger">Blue</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Fuel Type:</strong> 
+                                                <span class="text-warning">Diesel</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Top Speed:</strong> 
+                                                <span class="text-info">220 km/h</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Engine:</strong> 
+                                                <span class="text-success">2.0L Diesel</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Mileage:</strong> 
+                                                <span class="text-info">12,000 km</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Transmission:</strong> 
+                                                <span class="text-warning">Automatic</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Horsepower:</strong> 
+                                                <span class="text-danger">190 HP</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-info d-flex justify-content-between">
+                                    <div class="car-text">
+                                        <h6 class="font-weight-bold text-dark">CAR MAKER</h6>
+                                        <h6 class="text-dark">MODEL</h6>
+                                    </div>
+                                    <button class="align-self-start py-2 px-3 btn priceBtn">
+                                        £18,950
+                                        <span></span><span></span><span></span><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-10 mx-auto col-md-6 col-lg-4">
+                        <div class="card car-card shadow-lg" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                            <div class="card-img-wrapper">
+                                <img src="image/inventory-Buick-NSX-1970-538x404.jpg" alt="price" class="img-fluid card-img-top car-img">
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Year:</strong> 
+                                                <span class="text-success">1979</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Color:</strong> 
+                                                <span class="text-danger">Yellow</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Fuel Type:</strong> 
+                                                <span class="text-warning">Petrol</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Top Speed:</strong> 
+                                                <span class="text-info">280 km/h</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Engine:</strong> 
+                                                <span class="text-success">3.5L V8</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Mileage:</strong> 
+                                                <span class="text-info">20,000 km</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Transmission:</strong> 
+                                                <span class="text-warning">Manual</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Horsepower:</strong> 
+                                                <span class="text-danger">350 HP</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-info d-flex justify-content-between">
+                                    <div class="car-text">
+                                        <h6 class="font-weight-bold text-dark">CAR MAKER</h6>
+                                        <h6 class="text-dark">MODEL</h6>
+                                    </div>
+                                    <button class="align-self-start py-2 px-3 btn priceBtn">
+                                        £18,950
+                                        <span></span><span></span><span></span><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-10 mx-auto col-md-6 col-lg-4">
+                        <div class="card car-card shadow-lg" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                            <div class="card-img-wrapper">
+                                <img src="image/inventory-Mercedes.jpg" alt="price" class="img-fluid card-img-top car-img">
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Year:</strong> 
+                                                <span class="text-success">1986</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Color:</strong> 
+                                                <span class="text-danger">Red</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Fuel Type:</strong> 
+                                                <span class="text-warning">Diesel</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Top Speed:</strong> 
+                                                <span class="text-info">250 km/h</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Engine:</strong> 
+                                                <span class="text-success">2.0L 4-Cylinder</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Mileage:</strong> 
+                                                <span class="text-info">10,000 km</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Transmission:</strong> 
+                                                <span class="text-warning">Automatic</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Horsepower:</strong> 
+                                                <span class="text-danger">250 HP</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-info d-flex justify-content-between">
+                                    <div class="car-text">
+                                        <h6 class="font-weight-bold text-dark">MERCEDES</h6>
+                                        <h6 class="text-dark">MODEL 1980</h6>
+                                    </div>
+                                    <button class="align-self-start py-2 px-3 btn priceBtn">
+                                        $50,000
+                                        <span></span><span></span><span></span><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-10 mx-auto col-md-6 col-lg-4">
+                        <div class="card car-card shadow-lg" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                            <div class="card-img-wrapper">
+                                <img src="image/inventory-Morgan jpeg.jpeg" alt="price" class="img-fluid card-img-top car-img">
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Year:</strong> 
+                                                <span class="text-success">1990</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Color:</strong> 
+                                                <span class="text-danger">Blue</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Fuel Type:</strong> 
+                                                <span class="text-warning">Petrol</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Top Speed:</strong> 
+                                                <span class="text-info">240 km/h</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Engine:</strong> 
+                                                <span class="text-success">3.5L V8</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Mileage:</strong> 
+                                                <span class="text-info">8,000 km</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Transmission:</strong> 
+                                                <span class="text-warning">Automatic</span>
+                                            </p>
+                                            <p class="m-0 text-muted card-footer-infos">
+                                                <strong class="text-primary">Horsepower:</strong> 
+                                                <span class="text-danger">280 HP</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-info d-flex justify-content-between">
+                                    <div class="car-text">
+                                        <h6 class="font-weight-bold text-dark">MORGAN</h6>
+                                        <h6 class="text-dark">MODEL 1982</h6>
+                                    </div>
+                                    <button class="align-self-start py-2 px-3 btn priceBtn">
+                                        $50,000
+                                        <span></span><span></span><span></span><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </section>
+        <div class="section question py-5 my-3" id="question">
+            <div class="question-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 mx-auto my-2 col-md-6 d-flex justify-content-between question-gray p-5">
+                        <a href="#" class="question-icon mr-3">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <div class="question-text w-75">
+                            <h4 class="question-title font-weight-bold">
+                                ARE YOU LOOKING FOR A CAR ?
+                            </h4>
+                            <p class="question-info">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, eligendi?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-10 mx-auto my-2 col-md-6 d-flex justify-content-between question-yellow p-5">
+                        <a href="#" class="question-icon mr-3">
+                            <i class="fas fa-dollar-sign fa-fw"></i>
+                        </a>
+                        <div class="question-text w-75">
+                            <h4 class="question-title font-weight-bold">
+                                DO YOU WANT TO SELL A CAR ?
+                            </h4>
+                            <p class="question-info">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, eligendi?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <section class="classic-cars py-5">
+            <div class="container">
+                <div class="row mb-4 text-center">
+                    <div class="col">
+                        <h2 class="section-title-special font-weight-bold text-uppercase">
+                            Classic Cars - Timeless Elegance
+                        </h2>
+                        <p class="text-muted section-title-special-caption text-success">
+                            Discover the beauty and history of the most iconic classic cars from the golden age of automotive design.
+                        </p>
+                    </div>
+                </div>
+                <div class="row align-items-center 800">
+                    <div class="col-md-6 mb-4 mb-md-0 video-caption">
+                        <h3 class="mb-3 text-danger">The Charm of Classic Cars</h3>
+                        <p class="text-light-emphasis">
+                            Classic cars represent a unique blend of artistry and engineering. 
+                            From the sleek curves of a 1960s Jaguar E-Type to the robust elegance of a 1950s Mercedes-Benz 300SL, 
+                            these cars tell stories of innovation, luxury, and passion for design.
+                        </p>
+                        <ul class="list-unstyled text-success-emphasis">
+                            <li>✅ Handcrafted designs with timeless appeal</li>
+                            <li>✅ Revolutionary engineering of their era</li>
+                            <li>✅ A symbol of status and sophistication</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="ratio ratio-16x9">
+                            <video controls style="object-fit: cover;" class="rounded-3" poster="./image/v.jpg">
+                                <source src="video/file.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- small gallery-->
+                <section id="iconic-gallery">
+                    <div class="container">
+                        <div class="row mt-5 g-3">
+                            <div class="col-12 text-center">
+                                <h3 class="mb-4 Models-gallery text-success-emphasis">Iconic Models Gallery</h3>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 iconic-gallery-item">
+                                <h5 class="text-start mb-1 ps-2 text-danger bg-warning rounded-1">Jaguar E-Type</h5>
+                                <div class="card-img-wrapper-fave">
+                                    <img src="image/Jaguar - XJR - 1998.jpg" alt="Jaguar E-Type" class="img-fluid rounded shadow">
+                                    <input class="toggle-heart" type="checkbox" id="heart-toggle-1">
+                                    <label class="heart-label" for="heart-toggle-1" aria-label="like">❤</label>
+                                </div>                           
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 iconic-gallery-item">
+                                <h5 class="text-start mb-1 ps-2 text-warning  bg-danger rounded-1">Mercedes-Benz 300SL</h5>
+                                <div class="card-img-wrapper-fave">
+                                    <img src="image/featured-Mercedes 300SL R107 RHD.jpg" alt="Mercedes-Benz 300SL" class="img-fluid rounded shadow">
+                                    <input class="toggle-heart" type="checkbox" id="heart-toggle-2">
+                                    <label class="heart-label" for="heart-toggle-2" aria-label="like">❤</label>  
+                                </div>                          
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 iconic-gallery-item">
+                                <h5 class="text-start mb-1 ps-2 text-danger bg-warning rounded-1">Ford Mustang</h5>
+                                <div class="card-img-wrapper-fave">
+                                    <img src="image/gallery- Ford Thunderbird.jpg" alt="Ford Mustang" class="img-fluid rounded shadow">
+                                    <input class="toggle-heart" type="checkbox" id="heart-toggle-3">
+                                    <label class="heart-label" for="heart-toggle-3" aria-label="like">❤</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 iconic-gallery-item">
+                                <h5 class="text-start mb-1 ps-2 text-warning bg-danger rounded-1">Porsche 911</h5>
+                                <div class="card-img-wrapper-fave">
+                                    <img src="image/porsche911 997 carrera gts cabriolet.jpg" alt="Porsche 911" class="img-fluid rounded shadow">
+                                    <input class="toggle-heart" type="checkbox" id="heart-toggle-4">
+                                    <label class="heart-label" for="heart-toggle-4" aria-label="like">❤</label>
+                                </div>                           
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 iconic-gallery-item">
+                                <h5 class="text-start mb-1 ps-2 text-danger bg-warning rounded-1">Chevrolet Corvette</h5>
+                                <div class="card-img-wrapper-fave">
+                                    <img src="image/chevrolet-corvette-c1-1961.jpg" alt="Chevrolet Corvette" class="img-fluid rounded shadow">
+                                    <input class="toggle-heart" type="checkbox" id="heart-toggle-5">
+                                    <label class="heart-label" for="heart-toggle-5" aria-label="like">❤</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 iconic-gallery-item">
+                                <h5 class="text-start mb-1 ps-2 text-warning bg-danger rounded-1">Chevrolet Corvette</h5>
+                                <div class="card-img-wrapper-fave">
+                                    <img src="image/corvette.webp" alt="Chevrolet Corvette" class="img-fluid rounded shadow">
+                                    <input class="toggle-heart" type="checkbox" id="heart-toggle-6">
+                                    <label class="heart-label" for="heart-toggle-6" aria-label="like">❤</label>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="featured py-5" id="featured">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col d-flex flex-wrap justify-content-center">
+                        <h1 class="section-title-special mx-1 ml12">FEATURED CARS</h1>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-10 mx-auto col-lg-6 featured-info my-0 my-lg-3 bg-light py-2 ps-3 pe-3 rounded-3" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+    
+                        <div class="featured-item my-2 bg-beige d-flex flex-wrap py-0 p-md-1 align-items-baseline rounded-3" data-image="image/featured-mecedes2.webp">
+                            <span class="featured-icon mx-1">
+                                <img src="image/featured-Mercedes-Benz-icon.png" class="">
+                            </span>
+                            <h5 class="font-weight-bold mb-2 text-danger">MERCEDES</h5>
+                            <p class="mx-2 mb-2 text-light bg-dark">NEW MODEL</p>
+                            <i class="fas fa-chevron-down arrow-icon ms-auto me-3"></i> 
+                        </div>
+    
+                        <div class="featured-item my-2 bg-beige d-flex flex-wrap py-0 p-md-1 align-items-baseline rounded-3" data-image="image/featured-buick-skylark.jpg">
+                            <span class="featured-icon mx-1">
+                                 <img src="image/featured-BMW-icon.png" alt="">
+                            </span>
+                            <h5 class="font-weight-bold mb-2 text-primary-emphasis">BMW</h5>
+                            <p class="mx-2 mb-2 text-light bg-dark">NEW MODEL</p>
+                            <i class="fas fa-chevron-down arrow-icon ms-auto me-3"></i> 
+                        </div>
+            
+                        <div class="featured-item my-2 bg-beige d-flex flex-wrap py-0 p-md-1 align-items-baseline rounded-3" data-image="image/featured-Buick Riviera V8 445 Wildcat .jpg">
+                            <span class="featured-icon mx-1">
+                                 <img src="image/featuredBuick-icon.png" alt="" >
+                            </span>
+                            <h5 class="font-weight-bold mb-2 text-warning-emphasis">BUICK</h5>
+                            <p class="mx-2 mb-2 text-light bg-dark">NEW MODEL</p>
+                            <i class="fas fa-chevron-down arrow-icon ms-auto me-3"></i> 
+                        </div>
+            
+                        <div class="featured-item my-2 bg-beige d-flex flex-wrap py-0 p-md-1 align-items-baseline rounded-3" data-image="image/featured-cadillac.jpg">
+                            <span class="featured-icon mx-1">
+                                 <img src="image/featuredCadillac-icon.png" alt="">
+                            </span>
+                            <h5 class="font-weight-bold mb-2 text-success-emphasis">CADILLAC</h5>
+                            <p class="mx-2 mb-2 text-light bg-dark">NEW MODEL</p>
+                            <i class="fas fa-chevron-down arrow-icon ms-auto me-3"></i> 
+                        </div>
+            
+                        <div class="featured-item my-2 bg-beige d-flex flex-wrap py-0 p-md-1 align-items-baseline rounded-3" data-image="image/triumph-spitfire.jpg">
+                            <span class="featured-icon mx-1">
+                                 <img src="image/featured-Dodge-icon.png" alt="">
+                            </span>
+                            <h5 class="font-weight-bold mb-2 text-warning">DODGE</h5>
+                            <p class="mx-2 mb-2 text-light bg-dark">NEW MODEL</p>
+                            <i class="fas fa-chevron-down arrow-icon ms-auto me-3"></i> 
+                        </div>
+    
+                        <div class="featured-item my-2 bg-beige d-flex flex-wrap py-0 p-md-1 align-items-baseline rounded-3" data-image="image/featured-Bentley T1 - Rare.jpg">
+                            <span class="featured-icon mx-1">
+                                 <img src="image/featyred-Bentley-icon.png" alt="">
+                            </span>
+                            <h5 class="font-weight-bold mb-2 text-danger-emphasis">BENTLEY</h5>
+                            <p class="mx-2 mb-2 text-light bg-dark">NEW MODEL</p>
+                            <i class="fas fa-chevron-down arrow-icon ms-auto me-3"></i> 
+                        </div>
+                    </div>
+                    <div class="col-10 mx-auto col-lg-6 featured-img my-0 my-lg-3 align-self-center" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+                        <div class="img-container rounded-3 d-none d-lg-block">
+                            <img src="image/classic-car-background.jpg" class="img-fluid featured-photo d-none d-lg-block" id="featured-image">
+                            <a href="#" class="featured-link d-none d-lg-block">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 parallax-section">
+            <div class="overlay"></div>
+            <div class="counter-wrapper mx-auto rounded-3">
+                <div class="row d-flex">
+                    <div class="col-6 col-lg-3 m-0 counter-item d-flex flex-column align-items-center text-center">
+                        <div class="counter-emoji" data-target="3172" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                            <img src="image/counter-icon3.png" alt="emoji-icon">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center text-center">
+                            <span class="counter-number text-light-emphasis" data-target="3637" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">10</span>
+                            <span class="plus-sign text-light-emphasis" data-target="3172" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">+</span>
+                        </div>
+                        <p class="counter-caption text-warning-emphasis" data-target="3172" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">Expert Technicians</p>
+                    </div>
+    
+                    <div class="col-6 col-lg-3 m-0 counter-item d-flex flex-column align-items-center text-center">
+                        <div class="counter-emoji" data-target="3172" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                            <img src="image/counter-icon5.png" alt="emoji-icon">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="counter-number text-light-emphasis" data-target="27213" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">7</span>
+                            <span class="plus-sign text-light-emphasis" data-target="3172" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">+</span>
+                        </div>
+                        <p class="counter-caption text-warning-emphasis" data-target="3172" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">Satisfied Client</p>
+                    </div>
+    
+                    <div class="col-6 col-lg-3 m-0 counter-item d-flex flex-column align-items-center text-center">
+                        <div class="counter-emoji" data-target="3172" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                            <img src="image/counter-icon7.png" alt="emoji-icon">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="counter-number text-light-emphasis" data-target="7632" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">6</span>
+                            <span class="plus-sign text-light-emphasis" data-target="7632" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">+</span>
+                        </div>
+                        <p class="counter-caption text-warning-emphasis" data-target="7632" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">Years Experience</p>
+                    </div>
+    
+                    <div class="col-6 col-lg-3 m-0 counter-item d-flex flex-column align-items-center text-center">
+                        <div class="counter-emoji" data-target="3172" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                            <img src="image/counter-icon2.png" alt="emoji-icon">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="counter-number text-light-emphasis" data-target="1216" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">12</span>
+                            <span class="plus-sign text-light-emphasis" data-target="3172" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">+</span>
+                        </div>
+                        <p class="counter-caption text-warning-emphasis" data-target="3172" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">Completed Projects</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery py-5" id="gallery">
+            <div class="container">
+    
+                <div class="row mb-5">
+                    <div class="col d-flex flex-wrap justify-content-center">
+                        <h1 class="section-title-special font-weight-bold">OUR GALLERY</h1>
+                    </div>
+                </div>
+    
+                <div class="d-flex flex-column gap-2">
+                    <!-- main gallery-->
+                    <div class="row g-2">
+                        <div class="col-12 col-md-6">
+                            <div class="gallery-item h-100 d-flex align-items-center justify-content-center">
+                                <img src="image/gallery_cars.jpg" class="img-fluid w-100 h-100 object-fit-cover">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="row g-2">
+                                <div class="col-12 col-sm-6">
+                                    <div class="gallery-item h-100">
+                                        <img src="image/v.jpg" class="img-fluid w-100 h-100 object-fit-cover">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="gallery-item h-100">
+                                        <img src="image/bugatti.jpg" class="img-fluid w-100 h-100 object-fit-cover">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="gallery-item h-100">
+                                        <img src="image/gallery-Triumph TR6 PI .jpg" class="img-fluid w-100 h-100 object-fit-cover">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="gallery-item h-100">
+                                        <img src="image/counter-car.jpg" class="img-fluid w-100 h-100 object-fit-cover">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-2">
+                        <div class="col-12 col-md-6">
+                            <div class="row g-2">
+                                <div class="col-12 col-sm-6 g-2">
+                                    <div class="gallery-item h-100">
+                                        <img src="image/gallery-Aston Martin.jpg" class="img-fluid w-100 h-100 object-fit-cover">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="gallery-item h-100">
+                                        <img src="image/gallery-Price On Request.jpg" class="img-fluid w-100 h-100 object-fit-cover">
+                                    </div>
+                                </div>
+    
+                                <div class="col-12 col-sm-6">
+                                    <div class="gallery-item h-100">
+                                        <img src="image/gallery-Riley Hamilton SP.jpg" class="img-fluid w-100 h-100 object-fit-cover">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="gallery-item h-100">
+                                        <img src="image/gallery-Mercdes 280SE (W108) Manual RHD SOLD!.jpg" class="img-fluid w-100 h-100 object-fit-cover">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 d-grid gap-2">
+                            <div class="row h-100">
+                                <div class="gallery-item">
+                                    <img src="image/header_slider2jpg.jpg" class="img-fluid h-100 object-fit-cover">
+                                </div>
+                            </div>
+                            <div class="row h-100">
+                                <div class="gallery-item">
+                                    <img src="image/header_slider3.jpg" class="img-fluid h-100 object-fit-cover">
+                                </div>
+                            </div>
+                        </div>                     
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="search-box-content py-5">
+            <div class="container"  data-target="3172"data-aos="fade-right" data-aos-duration="700" data-aos-once="true">
+                <div class="row mb-2">
+                    <div class="col d-flex flex-wrap justify-content-center"></div>
+                </div>
+                <div class="row bg-image d-flex justify-content-between ps-5 pe-5 mx-1 mx-sm-0 rounded-2">
+                    <div class="col-lg-6 col-md-12 my-4 text-white input-box">
+                        <h3 class="mb-2 fs-4 Special">Stay Updated with Classic Cars</h3>
+                        <form class="d-flex" id="searchbox">
+                            <input id="search" type="text" placeholder="Your email address">
+                            <input id="submit" type="submit" value="Get Special">
+                        </form>
+                        <div class="byline mt-3 text-start align-items-center justify-content-between">
+                            <p class="mt-3">Designed with passion by <br>
+                                <a href="#" class="text-danger-emphasis">ClassicCarDesign</a>
+                                Showcased on<br>
+                                <a href="#" class="text-danger-emphasis">Vintage Auto Hub</a>
+                            </p>                        
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-5 col-md-12">
+                        <div class="image-container">
+                            <div class="col-12 d-flex justify-content-center">
+                            </div>
+                            <img src="image/inventory-mercedes3-removebg-preview.png" class="img-fluid flipped-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container pt-5" >
+            <div class="row mb-5">
+                <div class="col d-flex flex-wrap justify-content-center">
+                  <h1 class="section-title-special font-weight-bold align-self-center mx-1 ml12"> OUR SERVICES</h1>
+                </div>
+            </div>
+        </div>
+        <section class="services py-5 d-flex align-items-center">
+            <div class="video-container">
+                <video class="video-item" autoplay loop muted>
+                    <source src="./video/ford.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-overlay"></div>
+        </section>
+        <section class="quotes py-5 mt-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col d-flex flex-wrap justify-content-center">
+                      <h1 class="section-title-special font-weight-bold align-self-center mx-1 ml12"> WHAT THEY SAY</h1>
+                    </div>
+                    <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-7">
+                        <p class="fs-6 mt-3 mx-1 ml12 section-title-special-goutes">Over 40,000 happy customers. Be the next one.</p>
+                    </div>
+                </div>
+                <div class="row survey-container ">
+                    <div class="col-md-7 col-lg-7 col-xl-5 content-box">
+                        <div class="testimonial-bg border border-3 border-danger">
+                            <div id="testimonial-slider" class="owl-carousel">
+                                <div class="testimonial">
+                                    <p class="description fs-6">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at augue sed elit eleifend tempus. Etiam malesuada vulputate justo quis bibendum. Nam maximus ultricies rhoncus. Ut non felis vel enim dapibus.
+                                    </p>
+                                    <hr class="hr-text">
+                                    <div class="pic">
+                                        <img src="image/images (4).jpg" alt="">
+                                    </div>
+                                    <h3 class="title">Williamson,</h3>
+                                    <span class="post text-info-emphasis">Web Developer</span>
+                                </div>
+                                <div class="testimonial">
+                                    <p class="description fs-6">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at augue sed elit eleifend tempus. Etiam malesuada vulputate justo quis bibendum. Nam maximus ultricies rhoncus. Ut non felis vel enim dapibus.
+                                    </p>
+                                    <hr class="hr-text" data-content="AND">
+                                    <div class="pic">
+                                        <img src="image/images (1).jpg" alt="">
+                                    </div>
+                                    <h3 class="title">kristiana,</h3>
+                                    <span class="post text-info-emphasis">Web Designer</span>
+                                </div>
+                                <div class="testimonial">
+                                    <p class="description fs-6">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at augue sed elit eleifend tempus. Etiam malesuada vulputate justo quis bibendum. Nam maximus ultricies rhoncus. Ut non felis vel enim dapibus.
+                                    </p>
+                                    <hr class="hr-text" data-content="AND">
+                                    <div class="pic">
+                                        <img src="image/images.jpg" alt="">
+                                    </div>
+                                    <h3 class="title">kristiana,</h3>
+                                    <span class="post text-info-emphasis">Web Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-5 col-xl-7 img-section d-none d-md-block">
+                        <img class="img-fluid" src="image/Car-h-slider-1-1-1.jpg" alt="Car Image">
+                    </div>
+                </div> 
+                <div class="text-center py-5 my-3 goutes-caption"  data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">
+                    <h3 class="text-danger">See what other people are saying</h3>
+                    <div class="d-flex justify-content-center align-items-center gap-2 mb-4">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-white"></i>
+                        <h4 class="ms-2 mb-0 mt-2 fs-4 text-info">4.85 / 5.0 <span class="text-light-emphasis small">(2,594)</span></h4>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <section class="py-3 bg-dark-subtle ">
+            <div class="wrapper-slider m-4  mx-auto">
+                <div class="slider-controls-container d-flex align-items-center justify-content-center">
+                    <div class="vertical-line"></div>
+                    <button class="btn p-0 border-0 bg-transparent slider-arrow" id="nextBtn">
+                        <img src="image/arrow-right1.png" alt="Arrow Right" class="img-fluid">
+                    </button>
+                </div>
+                <div class="slider-container">
+    
+                    <div class="slider-inner d-flex">
+                        <div class="image-wrapper">
+                            <img src="image/slider-icon-chrysler.png" class="logo-img loading" alt="Logo 1">
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="image/slider-icon-McLaren.png" class="logo-img loading" alt="Logo 2">
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="image/slider-icon-benz.png" class="logo-img loading" alt="Logo 2">
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="image/slider-icon-bmw.png" class="logo-img loading" alt="Logo 3">
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="image/slider-icon-nissan.png" class="logo-img loading" alt="Logo 2">
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="image/slider-icon-dodge .png" class="logo-img loading" alt="Logo 2">
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="image/slider-icon-audi.png" class="logo-img loading" alt="Logo 3">
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="image/slider-icon-toyota.png" class="logo-img loading" alt="Logo 1">
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="image/slider-icon-volkswegen.png" class="logo-img loading" alt="Logo 1">
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="image/slider-icon-lamborghini.png" class="logo-img loading" alt="Logo 1">
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="image/slider-icon-chevrolet.png" class="logo-img loading" alt="Logo 1">
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="image/slider-icon-ford.png" class="logo-img loading" alt="Logo 1">
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="image/slider-icon-mazda.png" class="logo-img loading" alt="Logo 1">
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="image/slider-icon-bentley.png" class="logo-img loading" alt="Logo 1">
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="image/slider-icon-ferrari.png" class="logo-img loading" alt="Logo 1">
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="image/slider-icon-bugatti.png" class="logo-img loading" alt="Logo 1">
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="image/slider-alfaromeo.png" class="logo-img loading" alt="Logo 1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container-fluid p-0">
+                <div class="footer-card rounded-0">
+                    <div class="row mb-4 d-flex justify-content-between">
+    
+                        <div class="col-md-4 col-sm-11 col-xs-11">
+                            <div class="footer-text pull-left">
+                                <div class="d-flex">
+                                    <img src="image/My-Classics-Logo.png" alt="" class="img-fluid w-50 w-sm-25 w-md-50">
+                                </div>
+                                <p>
+                                    Explore the timeless beauty of classic cars. From restoration tips to buying guides, we're your ultimate destination for everything classic.
+                                </p>
+                                <div class="social mt-2 mb-3">
+    
+                                    <a href='#' class="fa fa-twitch fa-2x"></a>
+                                    <a href='#' class="fa fa-facebook fa-2x"></a>
+                                    <a href='#' class="fa fa-twitter fa-2x"></a>
+                                    <a href='#' class="fa fa-youtube-play fa-2x"></a>
+                                    <a href='#' class="fa fa-rss fa-2x"></a>
+                                    <a href='#' class="fa fa-vine fa-2x"></a>
+                                    <a href='#' class="fa fa-flickr fa-2x"></a>
+                                    <a href='#' class="fa fa-linkedin fa-2x"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-1 mb-2"></div>
+                        <div class="col-4 col-md-2 mb-3">
+                            <h5 class="heading">Services</h5>
+                            <ul class="card-text">
+                                <li>Restoration</li>
+                                <li>Customization</li>
+                                <li>Parts & Accessories</li>
+                                <li>Car Appraisal</li>
+                            </ul>
+                        </div>
+                        <div class="col-4 col-md-2 mb-3">
+                            <h5 class="heading">Industries</h5>
+                            <ul class="card-text">
+                                <li>Ford Mustang</li>
+                                <li>Chevrolet Camaro</li>
+                                <li>Porsche 911</li>
+                                <li>Volkswagen Beetle</li>
+                            </ul>
+                        </div>
+                        <div class="col-4 col-md-2 mb-3">
+                            <h5 class="heading">Company</h5>
+                            <ul class="card-text">
+                                <li>About Us</li>
+                                <li>Our Collection</li>
+                                <li>Contact</li>
+                                <li>Careers</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="divider mb-4"></div>
+                    <div class="row" style="font-size:10px;">
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="pull-left">
+                                <p><i class="fa fa-copyright"></i> 2020 thezpdesign</p>
+                            </div>
+                        </div>                
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="pull-right mr-4 d-flex policy">
+                                <div>Terms of Use</div>
+                                <div>Privacy Policy</div>
+                                <div>Cookie Policy</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+    </div>
+  
+    <!-- Bootstrap JS Bundle -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="js/app.js"></script>
+</body>
+</html>

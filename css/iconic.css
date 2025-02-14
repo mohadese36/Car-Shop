@@ -1,0 +1,102 @@
+
+  .card-img-wrapper-fave {
+    position: relative; 
+    overflow: hidden;
+    transition: background-color 0.7s ease; 
+}
+
+.heart-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgb(255, 255, 255, 0.4);
+    font-size: 2em;
+    filter: grayscale(1);
+    user-select: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+    z-index: 10;
+}
+
+
+.toggle-heart {
+    display: none;
+}
+
+
+.toggle-heart:checked + .heart-label {
+    color: #e2264d;
+    filter: none;
+    animation: heart 0.5s ease-in-out forwards;
+}
+
+/* انیمیشن قلب بزرگ شدن */
+@keyframes heart {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+input[type="checkbox"]:checked + label {
+    text-shadow: 0 0 3px white, 0 1px 1px white, 0 -1px 1px white, 1px 0 1px white, -1px 0 1px white;
+}
+
+
+
+
+.section-title-special-caption {
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-secondary-green) !important;
+}
+.card-img-wrapper-fave  img{
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out
+}
+.video-caption h3 {
+    font-family: "roboto", sans-serif;
+    text-transform: uppercase;
+    
+}
+.video-caption p {
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    font-style: italic;
+    padding-left: 0.2rem;
+
+}
+.list-unstyled li {
+    font-family: "Montserrat", sans-serif;
+    font-size : 1rem;
+    font-weight: 500;
+
+}
+
+.Models-gallery {
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 1px 1px 1px black;
+}
+.iconic-gallery-item h5 {
+    font-family: "Racing Sans One", serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 2px;
+    -webkit-text-stroke: 0.3px rgb(0, 0, 0);
+    text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.3), 
+    4px 4px 8px rgba(0, 0, 0, 0.5), 
+    6px 6px 12px rgba(0, 0, 0, 0.7);
+}
+

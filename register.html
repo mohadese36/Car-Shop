@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/register.css">
+
+</head>
+<body>
+    <a href="./index.html" class="back-link text-dark fw-bold d-flex align-items-center justify-content-start">
+        <img src="image/arrow-left.png" alt="Back" class="background-image w-100 h-auto me-2">
+        Back
+    </a>
+    <div class="container-fluid w-100 d-flex align-items-center justify-content-center wrapper">            
+        <div class="container col-12 w-10 h-100 d-flex flex-column align-items-center justify-content-center">
+                    <!-- لینک بازگشت -->
+
+            <div class="row">
+                <div class="form-container d-flex align-items-start justify-content-center">
+                    <div class="form-wrapper">
+                        <!-- فرم ثبت‌نام -->
+                        <div class="register-form w-100  rounded-4 " >
+                            <h2 class="text-center text-black fw-bold">REGISTER</h2>
+                            <form id="register-form">
+                                <div class="form-group">
+                                    <input class="border-0 border-bottom" type="text" id="name" placeholder=" " required>
+                                    <label for="name" class="placeholder text-light">Full Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input class="border-0 border-bottom" type="email" id="email" placeholder=" " required>
+                                    <label for="name" class="placeholder text-light">Email</label> 
+                                </div>
+                                <div class="form-group">
+                                    <input class="border-0 border-bottom" type="password" id="password" placeholder=" " required>
+                                    <label for="password" class="placeholder text-light">Password</label>
+                                </div>
+                                <div class="form-group">
+                                    <input class="border-0 border-bottom" type="password" id="confirm-password" placeholder=" " required>
+                                    <label for="confirm-password" class="placeholder text-light">Confirm Password</label>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn border-0 rounded-3 p-2 fw-light">REGISTER</button>
+                                </div>
+                                <div class="form-group">
+                                    <p class="toggle-link mt-4 text-center text-info-emphasis">Already have an account? <a href="#" id="login-link">Login</a></p>
+                                </div>
+                            </form>
+                        </div>
+            
+                        <!-- فرم ورود -->
+                        <div class="login-form w-100  rounded-4">
+                            <h2 class="text-center text-black fw-bold">LOGIN</h2>
+                            <form id="login-form">
+                                <div class="form-group">
+                                    <input class="border-0 border-bottom" type="email" id="login-email" placeholder=" " required>
+                                    <span class="placeholder text-light">Enter your email</span>
+                                </div>
+                                <div class="form-group">
+                                    <input class="border-0 border-bottom" type="password" id="login-password" placeholder=" " required>
+                                    <span class="placeholder text-light">Enter your password</span>
+                                </div>
+                                <div class="form-group">
+                                    <a href="#" class="toggle-link">Forgot Password?</a>
+                                </div>
+                                <button type="submit" class="btn border-0 rounded-3 p-2">LOGIN</button>
+                            </form>
+                            <div class="toggle-link mt-4 text-center">
+                                <p class="text-info-emphasis">Don't have an account? <a href="#" id="register-link">Register</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const loginLink = document.getElementById('login-link');
+        const registerLink = document.getElementById('register-link');
+        const formContainer = document.querySelector('.form-container');
+        const formWrapper = document.querySelector('.form-wrapper');
+    
+        // افزودن رویداد به لینک لاگین
+        loginLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            formContainer.classList.add('active');
+            formWrapper.style.transition = 'transform 0.7s ease-out';
+
+
+        });
+    
+        // افزودن رویداد به لینک ثبت‌نام
+        registerLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            formContainer.classList.remove('active');
+            formWrapper.style.transition = 'transform 0.7s ease-out';
+        });
+    
+        formWrapper.addEventListener('transitionstart', function() {
+            formWrapper.style.transition = 'transform 0.7s ease-out';
+        });
+    
+        formWrapper.addEventListener('transitionend', function() {
+            setTimeout(function() {
+                formWrapper.style.transition = 'transform 0.7s ease-out';
+            }, 10);
+        });
+    </script>
+
+    <!-- اضافه کردن اسکریپت بوت‌استرپ -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
