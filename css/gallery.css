@@ -135,7 +135,7 @@
     padding: 0 1%;
     margin: 0 0 0 1%;
     cursor: pointer;
-    font-size: clamp(0.65rem, 1.2vw, 0.85rem);
+    font-size: clamp(0.4rem, 2.5vw, 0.85rem);
     font-weight: bold;
     font-family: "Montserrat",sans-serif !important;
     font-weight: 800;
@@ -144,7 +144,8 @@
 }
 
 .byline p {
-    color: #343a40;
+    /* color: #343a40; */
+    color: var(--color_secondary-05);
     font-family: "Montserrat",sans-serif !important;
     font-size: clamp(0.5rem, 2vw, 0.6rem);
     font-style: oblique;
@@ -158,14 +159,15 @@
 }
 
 .byline p a {
-    color: #343a40;
+  color: var(--color_secondary-05);
     text-decoration: none;
     font-size: clamp(0.75rem, 2vw, 0.75rem); 
 }
 h3.Special {
-    color: #343a40;
+    /* color: #343a40; */
+    color: var(--color_secondary-05);
     font-family: "Racing Sans One", serif !important;
-    font-weight: 700;
+    font-weight: 200;
     font-style: oblique;
     font-size: clamp(0.85rem, 1vw, 2rem) !important; 
     text-transform: uppercase;

@@ -1,12 +1,11 @@
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 @import 'goutes.css';
 @import 'slider.css';
@@ -24,9 +23,8 @@
   padding: 0 ;
   margin: 0 ;
   box-sizing: border-box;
-  /* border: 1px solid; */
- 
 }
+
 .racing-sans-one-regular {
   font-family: "Racing Sans One", serif;
   font-weight: 400;
@@ -44,7 +42,6 @@
 }
 
 :root {
-  /* رنگ‌های هدر */
   --color-header-bg: #fdfaf5;  
   --color-header-text: #38434f;
   --color-primary-blue: #3a82c8;  
@@ -61,89 +58,60 @@
   --color-footer-link-hover: #0a66c2; 
 
   --color-background-very-light: #ffffff;
+  --color_wite: #fff;
+  --color_red: #c90000;
+  --color_secondary-05: #fff6a3;
 
-
-
-
-
-
-
-
-
-
-
-
-  /* رنگ‌های اصلی */
-           /* آبی با حس زندگی بیشتر */
-  --color-primary-olive: #257226;          /* سبز زیتونی کمی روشن‌تر */
-  --color-primary-orange: #e59342;         /* نارنجی کمی گرم‌تر */
-  --color-primary-peach: #f5987e;          /* هلو */
-  --color-primary-dark-blue: #003a70;      /* آبی تیره‌تر برای کنتراست بیشتر */
-  --color-primary-grey-blue: #56687a;      /* خاکی آبی */
+  --color-primary-olive: #257226;         
+  --color-primary-orange: #e59342;         
+  --color-primary-peach: #f5987e;          
+  --color-primary-dark-blue: #003a70;      
+  --color-primary-grey-blue: #56687a;     
   
-  /* رنگ‌های اضافی */
-       /* سبز */
+  --color-secondary-dark-grey: #38434f; 
+  
+  --color-background-light-green: #d7ebce; 
+  --color-background-light-peach: #fce2ba; 
+  --color-background-light-pink: #fadfd8;  
+  --color-background-light-grey: #fcfbf3;  
+  --color-link-hover: #0052a3;    
 
+  --color-btn-bg: #4caf50;                 
+  --color-btn-text: #ffffff;               
+  --color-btn-hover-bg: #45a049;           
+  --color-btn-hover-text: #ffffff;         
+  --color-btn-disabled-bg: #9e9e9e;        
+  --color-btn-disabled-text: #fdfaf5;      
 
-  --color-secondary-dark-grey: #38434f;    /* خاکی تیره */
-  
-  /* رنگ‌های پس‌زمینه */
-    /* پس‌زمینه آبی روشن */
-  --color-background-light-green: #d7ebce; /* پس‌زمینه سبز روشن */
-  --color-background-light-peach: #fce2ba; /* پس‌زمینه هلو روشن */
-  --color-background-light-pink: #fadfd8;  /* پس‌زمینه صورتی روشن */
-  --color-background-light-grey: #fcfbf3;  /* پس‌زمینه بسیار روشن (جایگزین خاکی روشن) */
-    /* پس‌زمینه سفید برای حس لوکس */
-  
+  --color-input-bg: #ffffff;               
+  --color-input-border: #83941f;           
+  --color-input-text: #56687a;             
+  --color-input-placeholder: #fce2ba;      
+  --color-input-focus-border: #0a66c2;     
 
-  --color-link-hover: #0052a3;             /* هاور لینک */
-  
-  /* رنگ‌های دکمه‌ها */
-  --color-btn-bg: #4caf50;                 /* پس‌زمینه دکمه سبز */
-  --color-btn-text: #ffffff;               /* رنگ متن دکمه سفید */
-  --color-btn-hover-bg: #45a049;           /* پس‌زمینه دکمه در هاور سبز تیره‌تر */
-  --color-btn-hover-text: #ffffff;         /* متن دکمه در هاور سفید */
-  --color-btn-disabled-bg: #9e9e9e;        /* پس‌زمینه دکمه غیرفعال خاکی */
-  --color-btn-disabled-text: #fdfaf5;      /* متن دکمه غیرفعال سفید */
-  
-  /* رنگ‌های ورودی‌ها */
-  --color-input-bg: #ffffff;               /* پس‌زمینه ورودی‌ها */
-  --color-input-border: #83941f;           /* مرز ورودی‌ها */
-  --color-input-text: #56687a;             /* متن ورودی‌ها */
-  --color-input-placeholder: #fce2ba;      /* رنگ پیش‌فرض ورودی‌ها */
-  --color-input-focus-border: #0a66c2;     /* مرز ورودی در حالت فوکوس */
-  
-  /* رنگ‌های کارت‌ها */
-  --color-card-bg: #56687a;                /* پس‌زمینه کارت‌ها */
-  --color-card-text: #0a66c2;              /* متن داخل کارت‌ها */
-  --color-card-header-bg: #e7a33e;         /* پس‌زمینه هدر کارت‌ها */
-  --color-card-header-text: #ffffff;       /* متن هدر کارت‌ها */
-  --color-card-footer-bg: #83941f;         /* پس‌زمینه فوتر کارت‌ها */
-  --color-card-footer-text: #ffffff;       /* متن فوتر کارت‌ها */
-  --color-card-border: #d6d2cc;            /* مرز کارت‌ها */
-  
-  /* رنگ‌های فوتر */
-             /* پس‌زمینه فوتر */
-            /* رنگ متن فوتر */
-  --color-footer-link: #83941f;            /* رنگ لینک‌های فوتر */
-  --color-header-link-hover: #38434f;      /* هاور لینک‌های هدر */
-  
-  /* رنگ‌های منو */
-  --color-nav-bg: #38434f;                 /* پس‌زمینه منو */
-  --color-nav-text: #fdfaf5;               /* رنگ متن منو */
-  --color-nav-text: #fdfaf5;         /* هاور لینک‌های منو */
-  
- --color-black: #000;
-  --color-submenu-bg: #6d8e3e;  /* سبز زیتونی ملایم‌تر */
-  --color-submenu-link: #fdfaf5;           /* رنگ متن‌های زیرمنو (رنگ روشن) */
-  --color-submenu-link-hover: #ffcc00;  /* رنگ هاور لینک‌ها (زرد روشن) */
+  --color-card-bg: #56687a;                
+  --color-card-text: #0a66c2;              
+  --color-card-header-bg: #e7a33e;         
+  --color-card-header-text: #ffffff;       
+  --color-card-footer-bg: #83941f;         
+  --color-card-footer-text: #ffffff;       
+  --color-card-border: #d6d2cc;            
 
+  --color-footer-link: #83941f;            
+  --color-header-link-hover: #38434f;      
 
-  
-  /* رنگ‌های صفحه */
-              /* پس‌زمینه صفحه */
-  --color-page-text: #37424e;              /* رنگ متن صفحه */
+  --color-nav-bg: #38434f;                 
+  --color-nav-text: #fdfaf5;               
+  --color-nav-text: #fdfaf5;         
+
+  --color-black: #000;
+  --color-submenu-bg: #6d8e3e;  
+  --color-submenu-link: #fdfaf5;           
+  --color-submenu-link-hover: #ffcc00;  
+
+  --color-page-text: #37424e;              
 }
+
 .bg-beige {
   background: #ece5d1;
 }

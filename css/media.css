@@ -25,13 +25,33 @@
         max-width: 30%;
     }
 }
+
 @media screen and (max-width: 1024px) {
     .image-wrapper {
         width: 20%; 
     }
 }
+
 @media (max-width: 992px) {
     /* header */
+
+    .content nav:nth-of-type(2) {
+        background-color: var(--color-page-bg) !important; /* یا هر استایل دلخواه */
+    }
+    .navbar-toggler-icon {
+        filter: invert(100%); /* تغییر رنگ به سفید */
+    }
+    
+    .offcanvas {
+        background: lightblue;
+    }
+
+    .nav-item a {
+        
+        color: var(--color-header-text)!important;
+        /* box-shadow: unset !important; */
+    }
+
     .navbar-brand {
     max-width: 150px;
     height: auto;
@@ -57,19 +77,29 @@
     }
 
 }
-@media screen and (max-width:767px) {
+
+@media screen and (max-width:768px) {
     /* header */
+
     .navbar>.container {
         max-width: 100%;
         justify-content: space-between;
     }
-    .header-content {
-        width: 100%;
-    }
     .carousel-item {
         height: 60vh; 
         background-size: cover;
-      }
+    }
+
+    .glass-box {
+        background: rgba(0, 0, 0, 0);
+    }
+
+    .power-img {
+        max-width: 1.25rem !important;
+    }
+    .power-container {
+        margin-left: 1.5rem !important;
+    }
 
     /* gallery */
     .countrys {
@@ -120,6 +150,7 @@
     }
 
 }
+
 @media (max-width: 576px) {
 
     /* counter */
@@ -129,10 +160,27 @@
   .counter-caption {
     font-size: 0.8rem;
   }
+  .main-header-caption {
+    width: 100%;
+    max-width: 230px !important;
+    display: block; 
+  }
 
 }
+
 @media only screen and (max-width:480px) {
+
+    .header-title {
+        margin: 0.5rem 0 !important;
+    }
+    .header-content div:nth-of-type(1) {
+        margin: 0!important;
+    }
+    .main-header-caption  {
+        margin-top: 0 !important;
+        padding: 0.25rem 1rem;
     
+    }
     .testimonial-bg:before {
         width: 55px;
         height: 55px;
@@ -156,10 +204,16 @@
         flex-direction: column;
         gap: 0 !important;
     }
+
+    .main-header-caption {
+        display: none;
+    }
     .testimonial .title,
     .testimonial .post {
         font-size: 1rem;
     }
+
+
     .owl-theme .owl-controls {
         bottom: -10% !important;
     }
@@ -167,10 +221,7 @@
 
 @media (min-width: 768px) {
     /* header */
-    .header-container {
-        align-items: flex-start;
-        padding-top: 10%;
-    }
+
     .carousel-item img {
         height: calc(100vh - 6px) !important;
         object-fit: cover; 
@@ -183,11 +234,18 @@
 }
 
 @media (min-width: 992px) {
-    .header-container {
-        align-items: flex-start;
-        padding-top: 10%;
-    }
 
+    .nav-link {
+        text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.3), 
+        4px 4px 8px rgba(0, 0, 0, 0.5),  
+        6px 6px 12px rgba(0, 0, 0, 0.7);
+    } 
+
+    .navbar-divider {
+        background: transparent;
+
+    }
     /* search box */
       .flipped-image {
         align-self: flex-start;
