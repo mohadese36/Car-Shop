@@ -80,6 +80,9 @@
 
 @media screen and (max-width:768px) {
     /* header */
+    .header-container {
+        align-items: start !important;
+    }
 
     .navbar>.container {
         max-width: 100%;
