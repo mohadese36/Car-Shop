@@ -15,16 +15,16 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     
 </head>
 <body class="container-fluid bg-beige">
 
     <!-- loading screen-->
-    <div id="preloader">
+    <!-- <div id="preloader">
         <img src="https://themes.potenzaglobalsolutions.com/html/cardealer/images/loader3.gif" alt="">
-    </div>
+    </div> -->
     <div class="content">
         <nav class="navbar pt-2 d-none d-md-block bg-light top-navbar">
             <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center my-2 mx-auto">
@@ -68,7 +68,8 @@
             </div>
             <hr class="navbar-divider">
         </nav>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark  py-3">
+
             <div class="container">
                 <div class="nav-icons d-flex align-items-center gap-2 d-block d-md-none">
                     <span class="content__item">
@@ -83,7 +84,7 @@
                 </button>
             
                 <!-- Offcanvas menu for mobile view -->
-                <div class="offcanvas offcanvas-start bg-dark d-block d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas offcanvas-start  d-block d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <a class="navbar-brand d-flex justify-content-start" href="#">
                             <img src="image/My-Classics-Logo.png" alt="Logo" class="img-fluid"/>
@@ -102,7 +103,7 @@
                                 <a href="#" class="text-light nav-link fw-bold">HOME</a>
                             </li>
                             <li class="nav-item me-3">
-                                <a href="#" class="nav-link fw-bold" data-bs-toggle="collapse" data-bs-target="#skillsSubMenu" aria-expanded="false" aria-controls="skillsSubMenu">
+                                <a href="#" class="nav-link fw-bold text-dark" data-bs-toggle="collapse" data-bs-target="#skillsSubMenu" aria-expanded="false" aria-controls="skillsSubMenu">
                                     SKILLS
                                 </a>
                                 <ul class="collapse sub-menu p-1 border-1 w-auto" id="skillsSubMenu">
@@ -204,8 +205,8 @@
         </nav>
         <header class="header-slider">
             <div class="container header-container">
-                <div class="row w-100 align-items-center justify-content-start">
-                    <div class="col-md-8 col-lg-6 col-xl-5">
+                <div class="row align-items-center justify-content-start">
+                    <div class="col-12  col-sm-8 col-md-8 col-lg-6 col-xl-5" >
                         <div class="glass-box p-4">
                             <div class="header-content">
                                 <div class="d-flex justify-content-start align-items-center mb-3">
@@ -218,7 +219,7 @@
                                                     <i class="bi bi-star-fill text-warning me-1"></i>
                                                     <i class="bi bi-star-fill text-warning me-1"></i>
                                                     <i class="bi bi-star-half text-warning"></i>
-                                                    <span class="rating-number ms-2 text-info">4.68</span>
+                                                    <span class="rating-number ms-2 fw-bold">4.68</span>
                                                 </div>
                                                 <div class="rating-count">
                                                     <p class="rating-count-item text-muted m-0 text-light">Based on 894 ratings</p>
@@ -226,7 +227,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="d-flex align-items-center ms-5">
+                                    <div class="d-flex align-items-center ms-5 power-container">
                                         <img src="image/speed.png" alt="Logo" class="power-img img-fluid rounded-circle me-2">
                                         <div class="power">
                                             <span class="d-block fw-bold text-danger">Power Elite</span>
@@ -239,13 +240,15 @@
                                         Welcome to your 
                                         <br>
                                         personal 
-                                        <span class="text-danger">classic car</span> 
+                                        <span>classic car</span> 
                                         <br>
                                         buying experience
                                     </h1>
-                                    <span class="main-header-caption text-info">
-                                        With millions of people approved across the country, our flexible financing makes it easy to find terms that fit your budget regardless of your credit background.
-                                    </span>
+                                    <div class="main-header-caption rounded-3">
+                                        <span >
+                                            With millions of people approved across the country, our flexible financing makes it easy to find terms that fit your budget regardless of your credit background.
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -261,12 +264,15 @@
                 <div class="carousel-inner">
                     <div class="carousel-item h-100 w-100 active">
                         <img src="image/header-sliders.jpg" class="img-fluid w-100 h-100 d-block object-fit-cover" alt="Slider Image 1">
+                        <div class="slider-overlay"></div>
                     </div>
                     <div class="carousel-item h-100 w-100">
                         <img src="image/header-salids.jpg" class="img-fluid w-100 h-100 d-block object-fit-cover" alt="Slider Image 2">
+                        <div class="slider-overlay"></div>
                     </div>
                     <div class="carousel-item h-100 w-100">
                         <img src="image/header-sliders3.jpg" class="img-fluid w-100 h-25 d-block object-fit-cover" alt="Slider Image 3">
+                        <div class="slider-overlay"></div>
                     </div>
                 </div>
             </div>
@@ -1290,6 +1296,8 @@
                 </div>
             </div>
         </footer>
+
+
     
     </div>
   

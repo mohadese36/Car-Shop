@@ -27,6 +27,34 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// //nav background
+// function changeNavbarColor() {
+//   let navbar = document.querySelector(".navbar");
+
+//   // بررسی سایز صفحه
+//   if (window.innerWidth <= 768) {
+//       if (navbar.classList.contains("bg-dark")) {
+//           navbar.style.backgroundColor = "var(--color-header-bg)";
+//       }
+//   } else {
+//       navbar.style.backgroundColor = "var(--color-header-bg)";
+//   }
+// }
+
+// اطمینان از اجرای کد پس از بارگذاری کامل صفحه
+document.addEventListener("DOMContentLoaded", function() {
+  changeNavbarColor();  // هنگام بارگذاری صفحه
+  window.addEventListener("resize", changeNavbarColor);  // هنگام تغییر اندازه صفحه
+});
+
+
+// اجرای تابع هنگام بارگذاری صفحه
+changeNavbarColor();
+
+// اجرای تابع هنگام تغییر اندازه صفحه
+window.addEventListener("resize", changeNavbarColor);
+
+
 //toggle-heart
   document.querySelectorAll('.toggle-heart').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
