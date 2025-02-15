@@ -28,18 +28,18 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // //nav background
-// function changeNavbarColor() {
-//   let navbar = document.querySelector(".navbar");
+function changeNavbarColor() {
+  let navbar = document.querySelector(".navbar");
 
-//   // بررسی سایز صفحه
-//   if (window.innerWidth <= 768) {
-//       if (navbar.classList.contains("bg-dark")) {
-//           navbar.style.backgroundColor = "var(--color-header-bg)";
-//       }
-//   } else {
-//       navbar.style.backgroundColor = "var(--color-header-bg)";
-//   }
-// }
+  // بررسی سایز صفحه
+  if (window.innerWidth <= 768) {
+      if (navbar.classList.contains("bg-dark")) {
+          navbar.style.backgroundColor = "var(--color-header-bg)";
+      }
+  } else {
+      navbar.style.backgroundColor = "var(--color-header-bg)";
+  }
+}
 
 // اطمینان از اجرای کد پس از بارگذاری کامل صفحه
 document.addEventListener("DOMContentLoaded", function() {
